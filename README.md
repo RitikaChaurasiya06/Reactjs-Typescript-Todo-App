@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# React + TypeScript Todo App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant Todo App built with **React.js**, **TypeScript**, and styled using **Bootstrap 5**. Users can add tasks, mark them as completed, delete completed tasks, and filter between all, active, and completed todos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Add new todo tasks
+- ✅ Mark tasks as completed using checkbox
+- ✅ Delete completed tasks
+- ✅ Filter tasks by: All | Active | Completed
+- ✅ Bootstrap-based responsive UI
+- ✅ State management using React Context API
+- ✅ TypeScript for type safety
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Technology   | Description                     |
+|--------------|---------------------------------|
+| React        | Frontend Library                |
+| TypeScript   | Strongly typed JavaScript       |
+| Bootstrap 5  | CSS Framework for UI styling    |
+| React Router | For client-side routing         |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📂 Folder Structure
+
+my-todo-app/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── AddTodo.tsx
+│ │ └── Todos.tsx
+│ ├── store/
+│ │ └── Todos.tsx
+│ ├── App.tsx
+│ ├── main.tsx
+│ └── index.css
+├── README.md
+└── package.json
+
+
+
+---
+
+## 🔧 Installation and Running the App
+
+```bash
+# Clone the repository
+git clone https://github.com/RitikaChaurasiya06/Reactjs-Typescript-Todo-App.git
+
+cd Reactjs-Typescript-Todo-App
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
