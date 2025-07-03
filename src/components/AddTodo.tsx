@@ -12,9 +12,9 @@ const AddTodo = () => {
     }
 
   return (
-    <form onSubmit={handleFormSubmit}>
-        <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
-        <button type= "submit">Add</button>
+    <form onSubmit={handleFormSubmit} className='d-flex align-center justify-content-center gap-2 my-4 px-3 py-3 rounded bg-light'>
+        <input type="text" className='p-1 w-75 border' placeholder='Add Your Task' value={todo} onChange={(e) => setTodo(e.target.value)} />
+        <button type= "submit" className='btn btn-danger px-3 fw-semibold shadow-sm '>Add</button>
     </form>
   )
 }
